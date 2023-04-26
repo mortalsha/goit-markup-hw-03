@@ -98,7 +98,9 @@ img {
 }
 
 .header-nav {
+  display: flex;
   margin-right: auto;
+  align-items: center;
 }
 
 .header-nav-list {
@@ -204,6 +206,10 @@ img {
   gap: 24px;
 }
 
+.skills {
+  width: calc((100% - 72px) / 4);
+}
+
 .row-title {
   margin-bottom: 8px;
   font-weight: 500;
@@ -290,7 +296,9 @@ img {
 
 .portfolio-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
+  margin-bottom: 72px;
 }
 
 .button {
@@ -300,6 +308,7 @@ img {
 .portfolio-btn,
 .portfolio {
   display: flex;
+  padding: 12px 24px;
   border: 1px solid var(--button-border);
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
@@ -310,13 +319,13 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  align-items: center;
   text-align: center;
   box-sizing: border-box;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
+  border: 1px solid transparent;
   background-color: var(--focus-hover-color);
   color: var(--body-color);
 }
